@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="reegiterationform">
+        <form onsubmit="validateform(event)">
+            <div>Registration Form</div><br>
+            <div>
+                <label for="name">Enter your Name</label>
+                <input type="text" name="name"id="name" placeholder="Enter your name">
+            </div>
+            <div>
+                <label for="number">Enter your Number</label>
+                <input type="text" name="number"  id="number" maxlength="10" placeholder="Enter your number">
+            </div>
+            <div>
+                <label for="email">Enter your Email</label>
+                <input type="text" name="email" placeholder="Enter your Email">
+            </div>
+            <div>
+                <label for="newpass">Enter New Password</label>
+                <input type="password" name="newpass" id="newpass" placeholder="Enter New password">
+                <i class="far fa-eye" id="togglePassword"></i>
+            </div>
+            <div>
+                <!-- <input type="password" name="secretpin" placeholder="Secret pin"> -->
+                <div class="inner_box">
+                    <label for="secretpin">Secret Pin</label>
+                    <input type="text" name="secretpin" id="secretpin" readomly>
+                    <i class="far fa-eye" id="togglePin"></i>
+                    <button type="button" id="refresh" onclick="CaptchaShow(event)">Press for security</button>
+                </div>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+                <button><a href="./login.html">Login</a></button>
+            </div>
+        </form>
+    </div>
+    <script src="/register.js"></script>
+</body>
+
+</html>
