@@ -50,16 +50,23 @@
             </div>
             <div class="inpuf">
                 <!-- <input type="password" name="secretpin" placeholder="Secret pin"> -->
-                <div class="inner_box">
+                <div>
                     <label for="secretpin">Secret Pin</label>
-                    <input type="text" name="secretpin" id="secretpin" readomly>
+                </div>
+                <div>
+                    <input type="text" name="secretpin" id="secretpin" placeholder="*******" readomly>
+                </div>
                     <i class="far fa-eye" id="togglePin"></i>
                     <button type="button" id="refresh" onclick="CaptchaShow(event)">Captcha</button>
-                </div>
             </div>
-            <div>
-                <button type="submit">Submit</button>
-                <button><a href="./login.html">Login</a></button>
+            <br>
+            <div class="buttondiv">
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+                <div>
+                    <button><a href="./login.html">Login</a></button>
+                </div>
             </div>
         </form>
     </div>
