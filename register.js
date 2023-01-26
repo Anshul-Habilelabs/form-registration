@@ -35,9 +35,9 @@ function validateform(e) {
     }
 
     handleSubmit(e)
-    // getinfo(e)
 }
 
+//==============================Registration====================
 
 let arr = [];
 
@@ -58,6 +58,8 @@ function handleSubmit(e) {
     console.log(data);
     localStorage.setItem("userInfo", data);
 }
+
+//================================captch=======================
 
 function captcha(size, isSpecialCharacter, isNumber) {
     var special = '!@#$%^&*()';
@@ -83,12 +85,13 @@ function captcha(size, isSpecialCharacter, isNumber) {
 
 function CaptchaShow(e) {
     e.preventDefault();
-    alert('Don not forget to store Security Pin')
+    alert('Please Remember the Secret Pin')
     document.getElementById('secretpin').value = captcha(5, true, true);
     return;
 
 }
 
+//============================Eye function==========================
 
 const togglePassword = document.querySelector('#togglePassword');
 const password = document.querySelector('#newpass');

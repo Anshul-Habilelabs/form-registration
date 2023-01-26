@@ -20,7 +20,7 @@
                     <label for="name">Enter your Name</label>
                 </div>
                 <div class="input">
-                    <input type="text" name="name"id="name" placeholder="Enter your name">
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
                 </div>
             </div>
             <div class="inpuf">
@@ -28,7 +28,7 @@
                     <label for="number">Enter your Number</label>
                 </div>
                 <div class="input">
-                    <input type="text" name="number"  id="number" maxlength="10" placeholder="Enter your number">
+                    <input type="text" name="number" id="number" maxlength="10" placeholder="Enter your number">
                 </div>
             </div>
             <div class="inpuf">
@@ -39,25 +39,28 @@
                     <input type="text" name="email" placeholder="Enter your Email">
                 </div>
             </div>
-            <div class="inpuf">
+            <div class="passdiv">
                 <div class="input">
                     <label for="newpass">Enter New Password</label>
                 </div>
                 <div class="input">
                     <input type="password" name="newpass" id="newpass" placeholder="Enter New password">
-                <i class="far fa-eye" id="togglePassword"></i>
+                    <i class="far fa-eye" id="togglePassword"></i>
                 </div>
             </div>
-            <div class="inpuf">
-                <!-- <input type="password" name="secretpin" placeholder="Secret pin"> -->
+            <div class="pindiv">
                 <div>
                     <label for="secretpin">Secret Pin</label>
                 </div>
                 <div>
-                    <input type="text" name="secretpin" id="secretpin" placeholder="*******" readomly>
+                    <div>
+                        <input type="text" name="secretpin" id="secretpin" placeholder="*******" readomly>
+                        <i class="far fa-eye" id="togglePin"></i>
+                    </div>
+                    <div>
+                        <button type="button" id="refresh" onclick="CaptchaShow(event)">Captcha</button>
+                    </div>
                 </div>
-                    <i class="far fa-eye" id="togglePin"></i>
-                    <button type="button" id="refresh" onclick="CaptchaShow(event)">Captcha</button>
             </div>
             <br>
             <div class="buttondiv">

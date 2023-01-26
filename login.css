@@ -12,16 +12,17 @@ body {
 }
 
 .loginformdiv{
+    padding: 10px;
     width: 30%;
-    height: 190px;
+    height: 250px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    border: 2px solid black;
-    box-shadow: 5px 5px 2px 2px #796f6f;
     background-color:rgba(252, 238, 238, 0.507);
+    box-shadow: 2px 2px 8px 2px #796f6f;
+    border-radius: 20px;
 
 }
 
@@ -35,6 +36,7 @@ input[type=password] {
 }
 
 .reegiterationform {
+    padding: 10px;
     background-color:rgba(252, 238, 238, 0.507);
     width: 35%;
     position: absolute;
@@ -42,8 +44,9 @@ input[type=password] {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    border: 2px solid black;
-    box-shadow: 5px 5px 2px 2px #796f6f;
+    /* border: 2px solid black; */
+    box-shadow: 2px 2px 8px 2px #796f6f;
+    border-radius: 20px;
 
 }
 
@@ -55,11 +58,13 @@ i {
 .inputflex{
     display: flex;
     justify-content:space-around;
+    padding: 10px 4px;
 }
 .inputname{
     margin-left: 60px;
     display: flex;
     gap: 4.7rem;
+    padding: 10px 0px;
 }
 .inpuf{
     /* width: 100%; */
@@ -72,4 +77,14 @@ i {
     display: flex;
     justify-content: space-around;
     
+}
+.passdiv{
+    display: flex;
+    gap: 7rem;
+    margin-top: 15px;
+}
+.pindiv{
+    display: flex;
+    gap: 11.7rem;
+    margin-top: 15px;
 }

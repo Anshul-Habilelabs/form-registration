@@ -4,17 +4,17 @@ function loginvalidate(e) {
     var formobj = document.getElementById('loginform').elements;
 
     if (formobj.name.value == '') {
-        alert('Please fill the blank')
+        alert('Please fill the form')
         return false;
     }
 
     if (!localStorage.getItem('userInfo')) {
-        alert('Please Register first');
+        alert('Please Register yourself');
         return false;
     }
 
 
-    // login validation
+    //============= login validation ================   
 
     let checkData = JSON.parse(localStorage.getItem('userInfo'));
     var ResultOutput = checkData.filter(function (Value) {
@@ -37,7 +37,7 @@ function loginvalidate(e) {
 
 }
 
-// ===============CODE FOR EYE DISABLED===============================
+// ===============EYE ICON===============================
 const togglePassword = document.querySelector('#togglePassword');
 const password = document.querySelector('#newpass');
 const secretpin = document.querySelector('#secretpin');
