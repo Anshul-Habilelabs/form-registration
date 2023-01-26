@@ -15,23 +15,37 @@
     <div class="loginformdiv">
         <form onsubmit="loginvalidate(event)" id="loginform">
             <div>Login</div>
-            <div>
-                <label for="emailph">Email</label>
-                <input type="text" name="emailph" id="name" placeholder="Email/Phone number">
+            <br>
+            <div class="inputname">
+                <div class="input">
+                    <label for="emailph">Email</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="emailph" id="name" placeholder="Email/Phone number">
+                </div>
             </div>
-            <div>
-                <label for="newpass">Password</label>
-                <input type="password" name="password" id="newpass" placeholder="Password">
-                <i class="far fa-eye" id="togglePassword"></i>
+            <div class="inputflex">
+                <div class="input">
+                    <label for="newpass">Password</label>
+                </div>
+                <div class="input">
+                    <input type="password" name="password" id="newpass" placeholder="Password">
+                    <i class="far fa-eye" id="togglePassword"></i>
+                </div>
             </div>
-            <div>
-                <label for="secretpin">Secret pin</label>
-                <input type="password" name="secretpin" id="secretpin" placeholder="Secret pin">
-                <i class="far fa-eye" id="togglePin"></i>
+            <div class="inputflex">
+                <div class="input"><label for="secretpin">Secret pin</label></div>
+                <div class="input"><input type="password" name="secretpin" id="secretpin" placeholder="Secret pin">
+                    <i class="far fa-eye" id="togglePin"></i>
+                </div>
             </div>
-            <div>
-                <button type="submit">Submit</button>
-                <button type="button"><a href="./registraion.html">Register</a></button>
+            <br>
+            <div class="inputflex">
+                <div class="input"><button type="submit">Submit</button></div>
+                <div class="input">
+                    <button type="button"><a href="./registraion.html">Register</a></button>
+                </div>
+
             </div>
         </form>
     </div>

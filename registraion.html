@@ -15,30 +15,46 @@
     <div class="reegiterationform">
         <form onsubmit="validateform(event)">
             <div>Registration Form</div><br>
-            <div>
-                <label for="name">Enter your Name</label>
-                <input type="text" name="name"id="name" placeholder="Enter your name">
+            <div class="inpuf">
+                <div class="input">
+                    <label for="name">Enter your Name</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="name"id="name" placeholder="Enter your name">
+                </div>
             </div>
-            <div>
-                <label for="number">Enter your Number</label>
-                <input type="text" name="number"  id="number" maxlength="10" placeholder="Enter your number">
+            <div class="inpuf">
+                <div class="input">
+                    <label for="number">Enter your Number</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="number"  id="number" maxlength="10" placeholder="Enter your number">
+                </div>
             </div>
-            <div>
-                <label for="email">Enter your Email</label>
-                <input type="text" name="email" placeholder="Enter your Email">
+            <div class="inpuf">
+                <div class="input">
+                    <label for="email">Enter your Email</label>
+                </div>
+                <div class="input">
+                    <input type="text" name="email" placeholder="Enter your Email">
+                </div>
             </div>
-            <div>
-                <label for="newpass">Enter New Password</label>
-                <input type="password" name="newpass" id="newpass" placeholder="Enter New password">
+            <div class="inpuf">
+                <div class="input">
+                    <label for="newpass">Enter New Password</label>
+                </div>
+                <div class="input">
+                    <input type="password" name="newpass" id="newpass" placeholder="Enter New password">
                 <i class="far fa-eye" id="togglePassword"></i>
+                </div>
             </div>
-            <div>
+            <div class="inpuf">
                 <!-- <input type="password" name="secretpin" placeholder="Secret pin"> -->
                 <div class="inner_box">
                     <label for="secretpin">Secret Pin</label>
                     <input type="text" name="secretpin" id="secretpin" readomly>
                     <i class="far fa-eye" id="togglePin"></i>
-                    <button type="button" id="refresh" onclick="CaptchaShow(event)">Press for security</button>
+                    <button type="button" id="refresh" onclick="CaptchaShow(event)">Captcha</button>
                 </div>
             </div>
             <div>

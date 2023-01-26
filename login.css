@@ -1,6 +1,6 @@
 * {
-    /* padding: 0px;
-    margin: 0px; */
+    padding: 0px;
+    margin: 0px;
     font-family: Arial, Helvetica, sans-serif
 }
 
@@ -12,7 +12,8 @@ body {
 }
 
 .loginformdiv{
-    width: 300px;
+    width: 30%;
+    height: 190px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -20,6 +21,7 @@ body {
     text-align: center;
     border: 2px solid black;
     box-shadow: 5px 5px 2px 2px #796f6f;
+    background-color:rgba(252, 238, 238, 0.507);
 
 }
 
@@ -33,6 +35,8 @@ input[type=password] {
 }
 
 .reegiterationform {
+    background-color:rgba(252, 238, 238, 0.507);
+    width: 30%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -46,4 +50,19 @@ input[type=password] {
 i {
     margin-left: -30px;
     cursor: pointer;
+}
+
+.inputflex{
+    display: flex;
+    justify-content:space-around;
+}
+.inputname{
+    margin-left: 60px;
+    display: flex;
+    gap: 4.7rem;
+}
+.inpuf{
+    display: flex;
+    justify-content: space-around;
+
 }
